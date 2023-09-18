@@ -9,7 +9,7 @@ function convertPokemonToLi(pokemon) {
     return `
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
+            <a style="text-decoration:none;" href="./details.html?${pokemon.number}"><span class="name">${pokemon.name}</span></a>
 
             <div class="detail">
                 <ol class="types">
