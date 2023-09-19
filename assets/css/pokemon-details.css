@@ -1,0 +1,17 @@
+.fa-solid {
+  color: white;
+}
+
+.fa-regular {
+  color: white;
+}
+
+#detail-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem 2rem;
+}
+
+#section-header {
+  border-radius: 1rem;
+}
