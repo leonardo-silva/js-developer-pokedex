@@ -6,10 +6,22 @@
   color: white;
 }
 
+#detail-name {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#detail-title {
+  flex-direction: row;
+  padding: 0 2rem 1rem;
+  color: white;
+}
+
 #detail-header {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 2rem 1.5rem;
 }
 
 #section-header {
