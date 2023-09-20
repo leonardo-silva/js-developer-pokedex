@@ -10,10 +10,20 @@ document.getElementById("go-back").addEventListener("click", () => {
 function loadPokeDetails(pokeId) {
   pokeDetailsApi.getPokemonDetailsById(pokeId).then((pokemonDetails) => {
     sectionHeader.classList.add(pokemonDetails.pokemon.type)
-    detailName.innerHTML += `<span class="name">${pokemonDetails.pokemon.name}</span>`
+    detailName.innerHTML += getHtmlForNameAndAbilities(pokemonDetails)
+    // detailName.innerHTML += `<span class="name">${pokemonDetails.pokemon.name}</span>`
   })
 }
 
 loadPokeDetails(idParam)
 
-//detailHeader.innerHTML += `<span>id=${idParam}</span>`
+function getHtmlForNameAndAbilities(pokemonDetails) {
+  return `
+    <span class="name">${pokemonDetails.pokemon.name}</span>
+    <div class="detail">
+        <ol class="types">
+            ${pokemonDetails.pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+        </ol>
+    </div>
+  `
+}
