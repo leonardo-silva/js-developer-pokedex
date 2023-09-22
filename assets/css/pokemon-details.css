@@ -80,7 +80,7 @@ td {
 }
 
 #section-header {
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   margin: 1rem;
 }
 
