@@ -24,14 +24,37 @@
   text-align: center;
 }
 
-#detail-name {
+.table {
+  padding: .8rem;
+}
+
+td {
+  padding-bottom: .2rem;
+}
+
+.table .td-1 {
+  color: gray;
+  font-size: .625rem;
+  padding-right: 1rem;
+}
+
+.table .td-2 {
+  text-transform: capitalize;
+  font-size: .825rem;
+  font-weight: bold;
+}
+
+#header-name {
   text-transform: capitalize;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-#detail-title {
+#header-title {
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 2rem 1rem;
   color: white;
 }
@@ -42,6 +65,28 @@
   padding: 3rem 2rem 1.5rem;
 }
 
+#header-img {
+  display: flex;
+  justify-content: center;
+}
+
+#header-img img {
+  width: 160px;
+  height: 160px;
+}
+
+#details-board {
+  margin-top: -2.1rem;
+}
+
 #section-header {
   border-radius: 1rem;
+  margin: 1rem;
 }
+
+#section-details {
+  border-radius: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+

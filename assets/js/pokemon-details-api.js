@@ -19,6 +19,7 @@ function convertPokeDetailsApiToPokemonDetails(paramPokeDetailJson) {
     pokemonDetails.abilities = paramPokeDetailJson.abilities.map((item) => item.ability.name)
     pokemonDetails.height = paramPokeDetailJson.height
     pokemonDetails.weight = paramPokeDetailJson.weight
+    pokemonDetails.species = paramPokeDetailJson.species.name
 
     return pokemonDetails
 }
